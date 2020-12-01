@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="654.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.qlbanvexe.PrimaryController">
+   <children>
+      <VBox id="manage" prefHeight="486.0" prefWidth="158.0" stylesheets="@../../../../../../../../../Downloads/demo/src/main/resources/com/mycompany/demo/Style.css">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="158.0" />
+            <Text blendMode="HARD_LIGHT" boundsType="LOGICAL_VERTICAL_CENTER" fill="#fff600" nodeOrientation="LEFT_TO_RIGHT" stroke="#2219e5" strokeLineJoin="BEVEL" strokeType="OUTSIDE" strokeWidth="2.0" text="DANH MỤC QUẢN LÍ" textOrigin="BOTTOM" translateX="5.0" wrappingWidth="155.6546630859375">
+               <font>
+                  <Font name="Tahoma Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" top="15.0" />
+               </VBox.margin>
+            </Text>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#onBtn2Click" prefHeight="40.0" prefWidth="158.0" text="ĐẶT VÉ" />
+            <Button mnemonicParsing="false" onAction="#onBtn3Click" prefHeight="40.0" prefWidth="158.0" text="CẬP NHẬT" />
+            <Button mnemonicParsing="false" onAction="#onBtn4Click" prefHeight="40.0" prefWidth="158.0" text="THỐNG KÊ" />
+            <Button mnemonicParsing="false" onAction="#onBtn5Click" prefHeight="40.0" prefWidth="158.0" text="HỦY VÉ" />
+         </children>
+      </VBox>
+      <VBox layoutX="158.0" prefHeight="486.0" prefWidth="496.0">
+         <children>
+            <HBox id="header" prefHeight="54.0" prefWidth="483.0" stylesheets="@../../../../../../../../../Downloads/demo/src/main/resources/com/mycompany/demo/Style.css">
+               <children>
+                  <ImageView fx:id="img1" fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" top="18.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Text boundsType="LOGICAL_VERTICAL_CENTER" strokeType="OUTSIDE" strokeWidth="0.0" text="QUẢN LÍ BÁN VÉ" textOrigin="CENTER" wrappingWidth="155.15491485595703">
+                     <HBox.margin>
+                        <Insets right="150.0" top="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="bt" mnemonicParsing="false" onAction="#onBtn1Click" prefHeight="34.0" prefWidth="126.0" text="Trang chủ">
+                     <HBox.margin>
+                        <Insets left="10.0" top="8.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fx:id="img2" fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="80.0" prefWidth="514.0">
+               <children>
+                  <ComboBox editable="true" prefHeight="26.0" prefWidth="135.0" promptText="Tìm nơi đi" stylesheets="@Style.css">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <ImageView fx:id="img3" fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets right="5.0" top="7.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ComboBox editable="true" prefHeight="26.0" prefWidth="135.0" promptText="Tìm nơi đến">
+                     <HBox.margin>
+                        <Insets right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets right="5.0" top="7.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ComboBox editable="true" prefWidth="150.0" promptText="Loại xe">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="70.0" prefWidth="514.0">
+               <children>
+                  <DatePicker prefHeight="26.0" prefWidth="130.0" promptText="Ngày khởi hành">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </DatePicker>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets right="5.0" top="3.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ComboBox editable="true" prefHeight="26.0" prefWidth="130.0" promptText="Giờ khởi hành">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets right="5.0" top="3.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ComboBox editable="true" prefHeight="26.0" prefWidth="130.0" promptText="Chọn số ghế" />
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="514.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="132.0" text="Họ tên khách hàng:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField id="name" prefHeight="30.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="514.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="60.0" text="CMND:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField id="cardId" prefHeight="30.0" prefWidth="175.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="514.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="100.0" text="Số điện thoại:">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField id="phoneNumber" prefHeight="30.0" prefWidth="175.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="514.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="75.0" text="Điểm đón: ">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField id="placeTo" prefHeight="30.0" prefWidth="175.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="496.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onBtn6Click" prefHeight="60.0" prefWidth="80.0" text="ĐẶT VÉ">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
