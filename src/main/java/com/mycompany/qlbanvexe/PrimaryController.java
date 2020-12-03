@@ -89,6 +89,16 @@ public class PrimaryController implements Initializable{
            io.printStackTrace();
        }
     }
+    public void onBtn7Click(ActionEvent event7) {
+       try {
+           FXMLLoader loader7 = new FXMLLoader(getClass().getResource("login.fxml"));
+           Stage stage7 = (Stage) bt.getScene().getWindow();
+           Scene scene7 = new Scene(loader7.load());
+           stage7.setScene(scene7);
+       }catch (IOException io){
+           io.printStackTrace();
+       }
+    }
     
     
     public void initialize(URL url, ResourceBundle rb) {

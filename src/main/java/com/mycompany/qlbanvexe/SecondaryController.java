@@ -7,7 +7,7 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
 
-public class SecondaryController implements Initializable{
+public class SecondaryController extends PrimaryController{
     @FXML
     public ComboBox<String> From; 
     public ComboBox<String> To;
@@ -38,5 +38,10 @@ public class SecondaryController implements Initializable{
         Time.setItems(time);
         Type.setItems(type);
         chooseSeat.setItems(seat);
+         
+    }
+
+    String toString(String format) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

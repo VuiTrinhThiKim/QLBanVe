@@ -1,5 +1,8 @@
+com\mycompany\qlbanvexe\AlertHelper.class
 com\mycompany\qlbanvexe\InfoController.class
 module-info.class
+com\mycompany\qlbanvexe\loginController.class
 com\mycompany\qlbanvexe\SecondaryController.class
+com\mycompany\qlbanvexe\statisticController.class
 com\mycompany\qlbanvexe\App.class
 com\mycompany\qlbanvexe\PrimaryController.class

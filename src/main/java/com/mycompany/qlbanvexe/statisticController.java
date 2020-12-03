@@ -7,29 +7,17 @@ package com.mycompany.qlbanvexe;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-
-
-
 
 /**
- * FXML Controller class
  *
- * @author ACER
+ * @author asus
  */
-public class InfoController extends SecondaryController{
-    @FXML
-  
+public class statisticController  extends loginController {
     
-    
- 
-
-    @Override
     public void initialize(URL url, ResourceBundle rb) {
        
         
         
-    }    
+    }  
     
 }

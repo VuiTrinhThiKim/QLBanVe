@@ -14,7 +14,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="654.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.qlbanvexe.PrimaryController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="654.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.qlbanvexe.SecondaryController">
    <children>
       <VBox id="manage" prefHeight="486.0" prefWidth="158.0" stylesheets="@../../../../../../../../../Downloads/demo/src/main/resources/com/mycompany/demo/Style.css">
          <children>
@@ -31,6 +31,7 @@
             <Button mnemonicParsing="false" onAction="#onBtn3Click" prefHeight="40.0" prefWidth="158.0" text="CẬP NHẬT" />
             <Button mnemonicParsing="false" onAction="#onBtn4Click" prefHeight="40.0" prefWidth="158.0" text="THỐNG KÊ" />
             <Button mnemonicParsing="false" onAction="#onBtn5Click" prefHeight="40.0" prefWidth="158.0" text="HỦY VÉ" />
+            <Button contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#onBtn7Click" prefHeight="43.0" prefWidth="158.0" text="QUẢN TRỊ VIÊN" />
          </children>
       </VBox>
       <VBox layoutX="158.0" prefHeight="486.0" prefWidth="496.0">
@@ -62,7 +63,7 @@
             </HBox>
             <HBox prefHeight="80.0" prefWidth="514.0">
                <children>
-                  <ComboBox editable="true" prefHeight="26.0" prefWidth="135.0" promptText="Tìm nơi đi" stylesheets="@Style.css">
+                  <ComboBox fx:id="From" editable="true" prefHeight="26.0" prefWidth="135.0" promptText="Tìm nơi đi" stylesheets="@Style.css">
                      <HBox.margin>
                         <Insets left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
@@ -72,7 +73,7 @@
                         <Insets right="5.0" top="7.0" />
                      </HBox.margin>
                   </ImageView>
-                  <ComboBox editable="true" prefHeight="26.0" prefWidth="135.0" promptText="Tìm nơi đến">
+                  <ComboBox fx:id="To" editable="true" prefHeight="26.0" prefWidth="135.0" promptText="Tìm nơi đến">
                      <HBox.margin>
                         <Insets right="5.0" top="5.0" />
                      </HBox.margin>
@@ -82,7 +83,7 @@
                         <Insets right="5.0" top="7.0" />
                      </HBox.margin>
                   </ImageView>
-                  <ComboBox editable="true" prefWidth="150.0" promptText="Loại xe">
+                  <ComboBox fx:id="Type" editable="true" prefWidth="150.0" promptText="Loại xe">
                      <HBox.margin>
                         <Insets top="5.0" />
                      </HBox.margin>
@@ -104,7 +105,7 @@
                         <Insets right="5.0" top="3.0" />
                      </HBox.margin>
                   </ImageView>
-                  <ComboBox editable="true" prefHeight="26.0" prefWidth="130.0" promptText="Giờ khởi hành">
+                  <ComboBox fx:id="Time" editable="true" prefHeight="26.0" prefWidth="130.0" promptText="Giờ khởi hành">
                      <HBox.margin>
                         <Insets right="5.0" />
                      </HBox.margin>
@@ -114,7 +115,7 @@
                         <Insets right="5.0" top="3.0" />
                      </HBox.margin>
                   </ImageView>
-                  <ComboBox editable="true" prefHeight="26.0" prefWidth="130.0" promptText="Chọn số ghế" />
+                  <ComboBox fx:id="chooseSeat" editable="true" prefHeight="26.0" prefWidth="130.0" promptText="Chọn số ghế" />
                </children>
             </HBox>
             <HBox prefHeight="50.0" prefWidth="514.0">
