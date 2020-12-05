@@ -33,9 +33,9 @@ public class loginController extends PrimaryController{
     @FXML
     private PasswordField passwordField;
      
-    private final String _USERNAME = "ngu";
-    private final String _PASSWORD = "123";
-    private final String _CSSERRFIELD = "txtFieldError";
+    private final String USERNAME = "ngu";
+    private final String PASSWORD = "123";
+    private final String CSSERRFIELD = "txtFieldError";
      
      
     @FXML
@@ -43,10 +43,16 @@ public class loginController extends PrimaryController{
         String username = nameField.getText();
         String password = passwordField.getText();
          
-        if (username != null && username .equals(_USERNAME)){
-            if (password != null && password.equals(_PASSWORD)){
+        if (username != null && username .equals(USERNAME)){
+            if (password != null && password.equals(PASSWORD)){
                 //thanh cong
                 validationStyle(true, true);
+                Alert alert = new Alert(AlertType.INFORMATION);
+                    alert.setTitle("Information Login");
+                    alert.setHeaderText(null);
+                    alert.setContentText("Đăng nhập thành công !");
+                    alert.showAndWait();
+                     
                  try {
                     FXMLLoader loaderDn = new FXMLLoader(getClass().getResource("statistic.fxml"));
                     Stage stageDn = (Stage) bt.getScene().getWindow();
@@ -55,12 +61,13 @@ public class loginController extends PrimaryController{
                 }catch (IOException io){
                     io.printStackTrace();
                 }
+                 
             } else {
                 validationStyle(true, false);
                  Alert alert = new Alert(AlertType.INFORMATION);
                     alert.setTitle("Information Login");
                     alert.setHeaderText(null);
-                    alert.setContentText("Login unsuccess!");
+                    alert.setContentText("Sai  mật khẩu  đăng nhập !");
                     alert.showAndWait();
                      }
         } else {
@@ -68,19 +75,19 @@ public class loginController extends PrimaryController{
              Alert alert = new Alert(AlertType.INFORMATION);
                     alert.setTitle("Information Login");
                     alert.setHeaderText(null);
-                    alert.setContentText("Login unsuccess!");
+                    alert.setContentText("Sai tên và mật khẩu đăng nhâp!");
                     alert.showAndWait();
         }
     }
-     public void validationStyle(boolean _user, boolean _pass){
-        if (_user){
+     public void validationStyle(boolean user, boolean pass){
+        if (user){
             nameField.getStyleClass().removeAll("txtFieldError");
             nameField.getStyleClass().add("txtField");
         }else{
             nameField.getStyleClass().add("txtFieldError");
         }
          
-        if (_pass){
+        if (pass){
             passwordField.getStyleClass().removeAll("txtFieldError");
             passwordField.getStyleClass().add("txtField");
         }else{

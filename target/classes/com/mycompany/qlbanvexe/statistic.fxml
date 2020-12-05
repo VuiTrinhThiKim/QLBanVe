@@ -29,7 +29,6 @@
             </Text>
             <Button alignment="CENTER" mnemonicParsing="false" onAction="#onBtn2Click" prefHeight="40.0" prefWidth="158.0" text="ĐẶT VÉ" />
             <Button mnemonicParsing="false" onAction="#onBtn3Click" prefHeight="40.0" prefWidth="158.0" text="CẬP NHẬT" />
-            <Button mnemonicParsing="false" onAction="#onBtn4Click" prefHeight="40.0" prefWidth="158.0" text="THỐNG KÊ" />
             <Button mnemonicParsing="false" onAction="#onBtn5Click" prefHeight="40.0" prefWidth="158.0" text="HỦY VÉ" />
             <Button contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#onBtn7Click" prefHeight="43.0" prefWidth="158.0" text="QUẢN TRỊ VIÊN" />
          </children>
@@ -73,8 +72,9 @@
                         <TableColumn prefWidth="197.60003662109375" text="Tuyến " />
                      </columns>
                   </TableView>
-                  <TextField layoutX="75.0" layoutY="14.0" prefHeight="26.0" prefWidth="281.0" />
-                  <Label layoutX="23.0" layoutY="17.0" prefHeight="18.0" prefWidth="43.0" text="Tên KH:" />
+                  <TextField layoutX="66.0" layoutY="35.0" prefHeight="26.0" prefWidth="281.0" />
+                  <Label layoutX="23.0" layoutY="34.0" prefHeight="26.0" prefWidth="43.0" text="Tên KH:" />
+                  <Button layoutX="383.0" layoutY="31.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="86.0" text="Check" />
                </children>
             </AnchorPane>
          </children>

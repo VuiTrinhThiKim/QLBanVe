@@ -7,9 +7,9 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-//import java.mysql.Connection;
-
-/**
+import com.mysql.jdbc.Driver;
+import java.sql.Connection;
+/**o
  * JavaFX App
  */
 public class App extends Application {
