@@ -2,6 +2,10 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<<<<<<< HEAD
+<?import javafx.scene.control.ComboBox?>
+=======
+>>>>>>> ef39591bfd70c9626301ecd8577efb082427e61a
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
@@ -61,10 +65,16 @@
                   </Button>
                </children>
             </HBox>
+<<<<<<< HEAD
+            <AnchorPane prefHeight="470.0" prefWidth="488.0">
+               <children>
+                  <TableView layoutX="5.0" layoutY="260.0" prefHeight="136.0" prefWidth="488.0">
+=======
             <HBox prefHeight="100.0" prefWidth="455.0" />
             <AnchorPane prefHeight="470.0" prefWidth="488.0">
                <children>
                   <TableView layoutX="5.0" layoutY="114.0" prefHeight="282.0" prefWidth="488.0">
+>>>>>>> ef39591bfd70c9626301ecd8577efb082427e61a
                      <columns>
                         <TableColumn prefWidth="68.79997253417969" text="Mã" />
                         <TableColumn prefWidth="149.6000213623047" text="Tên khách hàng" />
@@ -72,9 +82,17 @@
                         <TableColumn prefWidth="197.60003662109375" text="Tuyến " />
                      </columns>
                   </TableView>
+<<<<<<< HEAD
+                  <TextField layoutX="48.0" layoutY="13.0" prefHeight="26.0" prefWidth="281.0" />
+                  <Label layoutX="5.0" prefHeight="26.0" prefWidth="43.0" text="Tên KH:" />
+                  <Button layoutX="363.0" layoutY="9.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="86.0" text="Check" />
+                  <ComboBox fx:id="From" editable="true" layoutX="14.0" layoutY="52.0" prefHeight="26.0" prefWidth="135.0" promptText="Tìm nơi đi" stylesheets="@Style.css" />
+                  <ComboBox fx:id="To" editable="true" layoutX="164.0" layoutY="52.0" prefHeight="26.0" prefWidth="135.0" promptText="Tìm nơi đến" />
+=======
                   <TextField layoutX="59.0" layoutY="18.0" prefHeight="26.0" prefWidth="281.0" />
                   <Label layoutX="14.0" layoutY="18.0" prefHeight="26.0" prefWidth="43.0" text="Tên KH:" />
                   <Button layoutX="369.0" layoutY="14.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="86.0" text="Check" />
+>>>>>>> ef39591bfd70c9626301ecd8577efb082427e61a
                </children>
             </AnchorPane>
          </children>
