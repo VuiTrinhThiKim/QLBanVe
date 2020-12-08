@@ -3,71 +3,42 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-<<<<<<< HEAD
-
 package com.mycompany.qlbanvexe;
+
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import java.sql.Connection;
-import com.mysql.jdbc.Driver;
+import javafx.scene.control.ComboBox;
 
 /**
  *
  * @author asus
  */
-public class statisticController  extends loginController {
+public class statisticController extends loginController{
+    @FXML
+    public ComboBox<String> Place; 
+    public ComboBox<String> Time; 
+    public ComboBox<String> Type; 
+    public ComboBox<String> chooseSeat;
     
+    ObservableList<String> place = FXCollections.observableArrayList ("Gia Lai - TPHCM", "TPHCM - Gia Lai","Hà Nội - TPHCM", "TPHCM - Hà Nội");
+    ObservableList<String> time = FXCollections.observableArrayList("01:10", "02:20", "03:30", "04:40", "05:50",
+            "06:00", "07:15", "08:25", "09:35", "10:45", "11:05", "12:55");
     
+    ObservableList<String> type = FXCollections.observableArrayList("Thường: Ghế ngồi", "Thường: Giường nằm", "VIP: LIMOUSINE");
+            
+    ObservableList<String> seat = FXCollections.observableArrayList("A01", "A02", "A03", "A04", "A05", "B01", "B02", "B03", "B04", "B05");
+    
+     @Override   
     public void initialize(URL url, ResourceBundle rb) {
        
-        try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-        } catch (ClassNotFoundException ex) {
-            ex.printStackTrace();
-        }
-        
-    }  
-    @FXML
-    private void Add(ActionEvent eventA){
+        Place.setItems(place);
+        Time.setItems(time);
+        Type.setItems(type);
        
-        
-    }
+
+}
     
 }
-=======
-//package com.mysql.jdbc;
-//import com.mycompany.qlbanvexe.loginController;
-//import java.net.URL;
-//import java.util.ResourceBundle;
-//import javafx.event.ActionEvent;
-//import javafx.fxml.FXML;
-//import java.sql.Connection;
-//import java.sql.DriverManager;
-//import java.sql.SQLException;
-///**
-// *
-// * @author asus
-// */
-//public class statisticController  extends loginController {
-//    
-//    
-//    public void initialize(URL url, ResourceBundle rb) {
-//       
-//        try {
-//            Class.forName("com.mysql.jdbc.Driver");
-//        } catch (ClassNotFoundException ex) {
-//            ex.printStackTrace();
-//        }
-//        
-//    }  
-//    @FXML
-//    private void Add(ActionEvent eventA){
-//        Connection Conn = DriverManager.
-//        
-//    }
-//    
-//}
->>>>>>> ef39591bfd70c9626301ecd8577efb082427e61a

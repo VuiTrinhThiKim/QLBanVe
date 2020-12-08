@@ -8,11 +8,10 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import com.mysql.jdbc.Driver;
-<<<<<<< HEAD
+
 //import java.sql.Connection;
-=======
 import java.sql.Connection;
->>>>>>> ef39591bfd70c9626301ecd8577efb082427e61a
+
 /**o
  * JavaFX App
  */

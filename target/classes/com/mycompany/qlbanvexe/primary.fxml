@@ -28,7 +28,7 @@
             <Button alignment="CENTER" mnemonicParsing="false" onAction="#onBtn2Click" prefHeight="40.0" prefWidth="158.0" text="ĐẶT VÉ" />
             <Button mnemonicParsing="false" onAction="#onBtn3Click" prefHeight="40.0" prefWidth="158.0" text="CẬP NHẬT" />
             <Button mnemonicParsing="false" onAction="#onBtn5Click" prefHeight="40.0" prefWidth="158.0" text="HỦY VÉ" />
-            <Button contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#onBtn7Click" prefHeight="43.0" prefWidth="158.0" stylesheets="@Style.css" text="QUẢN TRỊ VIÊN" />
+            <Button fx:id="bt1" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#onBtn7Click" prefHeight="43.0" prefWidth="158.0" stylesheets="@Style.css" text="QUẢN TRỊ VIÊN" />
          </children>
          <cursor>
             <Cursor fx:constant="N_RESIZE" />

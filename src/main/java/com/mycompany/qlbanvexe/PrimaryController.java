@@ -56,16 +56,7 @@ public class PrimaryController implements Initializable{
        }
     }
     
-    public void onBtn4Click(ActionEvent event4) {
-       try {
-           FXMLLoader loader4 = new FXMLLoader(getClass().getResource("statistic.fxml"));
-           Stage stage4 = (Stage) bt.getScene().getWindow();
-           Scene scene4= new Scene(loader4.load());
-           stage4.setScene(scene4);
-       }catch (IOException io){
-           io.printStackTrace();
-       }
-    }
+    
     
     public void onBtn5Click(ActionEvent event5) {
        try {
@@ -101,6 +92,7 @@ public class PrimaryController implements Initializable{
     }
     
     
+    @Override
     public void initialize(URL url, ResourceBundle rb) {
         File file1 = new File("src/manage.jpg");
         Image image1 = new Image(file1.toURI().toString());

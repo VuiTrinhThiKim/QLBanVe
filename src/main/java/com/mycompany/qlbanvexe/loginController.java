@@ -7,7 +7,6 @@ package com.mycompany.qlbanvexe;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.Arrays;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -19,7 +18,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import javafx.stage.Window;
 
 /**
  *
@@ -27,7 +25,7 @@ import javafx.stage.Window;
  */
 public class loginController extends PrimaryController{
     @FXML
-    public Button bt;
+    public Button bt1;
     @FXML
     private TextField nameField;
     @FXML
@@ -55,7 +53,7 @@ public class loginController extends PrimaryController{
                      
                  try {
                     FXMLLoader loaderDn = new FXMLLoader(getClass().getResource("statistic.fxml"));
-                    Stage stageDn = (Stage) bt.getScene().getWindow();
+                    Stage stageDn = (Stage) bt1.getScene().getWindow();
                     Scene sceneDn = new Scene(loaderDn.load());
                     stageDn.setScene(sceneDn);
                 }catch (IOException io){
@@ -94,29 +92,6 @@ public class loginController extends PrimaryController{
             passwordField.getStyleClass().add("txtFieldError");
         }
     }
-
-//       
-//   public void onBtnDNClick(ActionEvent eventDn) {
-//       try {
-//           FXMLLoader loaderDn = new FXMLLoader(getClass().getResource("statistic.fxml"));
-//           Stage stageDn = (Stage) bt.getScene().getWindow();
-//           Scene sceneDn = new Scene(loaderDn.load());
-//           stageDn.setScene(sceneDn);
-//       }catch (IOException io){
-//           io.printStackTrace();
-//       }
-//    }
-
-   
-    
-
-    
-      
-
-//        
-    
-           
-    
 
      @Override   
     public void initialize(URL url, ResourceBundle rb) {

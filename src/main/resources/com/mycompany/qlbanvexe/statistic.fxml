@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
-<<<<<<< HEAD
 <?import javafx.scene.control.ComboBox?>
-=======
->>>>>>> ef39591bfd70c9626301ecd8577efb082427e61a
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
@@ -18,9 +16,10 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="648.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.qlbanvexe.PrimaryController">
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="648.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.qlbanvexe.statisticController">
    <children>
-      <VBox id="manage" prefHeight="486.0" prefWidth="158.0" stylesheets="@../../../../../../../../../Downloads/demo/src/main/resources/com/mycompany/demo/Style.css">
+      <VBox id="manage" layoutY="1.0" prefHeight="486.0" prefWidth="158.0" stylesheets="@Style.css">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="158.0" />
             <Text blendMode="HARD_LIGHT" boundsType="LOGICAL_VERTICAL_CENTER" fill="#fff600" nodeOrientation="LEFT_TO_RIGHT" stroke="#2219e5" strokeLineJoin="BEVEL" strokeType="OUTSIDE" strokeWidth="2.0" text="DANH MỤC QUẢN LÍ" textOrigin="BOTTOM" translateX="5.0" wrappingWidth="155.6546630859375">
@@ -36,66 +35,50 @@
             <Button mnemonicParsing="false" onAction="#onBtn5Click" prefHeight="40.0" prefWidth="158.0" text="HỦY VÉ" />
             <Button contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#onBtn7Click" prefHeight="43.0" prefWidth="158.0" text="QUẢN TRỊ VIÊN" />
          </children>
+         <cursor>
+            <Cursor fx:constant="N_RESIZE" />
+         </cursor>
       </VBox>
-      <VBox layoutX="158.0" prefHeight="486.0" prefWidth="488.0">
+      <HBox id="header" layoutX="158.0" layoutY="1.0" prefHeight="54.0" prefWidth="490.0" stylesheets="@Style.css">
          <children>
-            <HBox id="header" prefHeight="54.0" prefWidth="455.0" stylesheets="@../../../../../../../../../Downloads/demo/src/main/resources/com/mycompany/demo/Style.css">
-               <children>
-                  <ImageView fx:id="img1" fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
-                     <HBox.margin>
-                        <Insets left="5.0" right="5.0" top="18.0" />
-                     </HBox.margin>
-                  </ImageView>
-                  <Text boundsType="LOGICAL_VERTICAL_CENTER" strokeType="OUTSIDE" strokeWidth="0.0" text="THỐNG KÊ KHÁCH HÀNG" textOrigin="CENTER" wrappingWidth="218.35492706298828">
-                     <HBox.margin>
-                        <Insets right="70.0" top="15.0" />
-                     </HBox.margin>
-                     <font>
-                        <Font name="System Bold" size="18.0" />
-                     </font>
-                  </Text>
-                  <ImageView fx:id="img3" fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
-                  <Button fx:id="bt" mnemonicParsing="false" onAction="#onBtn1Click" prefHeight="34.0" prefWidth="126.0" text="Trang chủ">
-                     <HBox.margin>
-                        <Insets left="10.0" top="8.0" />
-                     </HBox.margin>
-                     <graphic>
-                        <ImageView fx:id="img2" fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
-                     </graphic>
-                  </Button>
-               </children>
-            </HBox>
-<<<<<<< HEAD
-            <AnchorPane prefHeight="470.0" prefWidth="488.0">
-               <children>
-                  <TableView layoutX="5.0" layoutY="260.0" prefHeight="136.0" prefWidth="488.0">
-=======
-            <HBox prefHeight="100.0" prefWidth="455.0" />
-            <AnchorPane prefHeight="470.0" prefWidth="488.0">
-               <children>
-                  <TableView layoutX="5.0" layoutY="114.0" prefHeight="282.0" prefWidth="488.0">
->>>>>>> ef39591bfd70c9626301ecd8577efb082427e61a
-                     <columns>
-                        <TableColumn prefWidth="68.79997253417969" text="Mã" />
-                        <TableColumn prefWidth="149.6000213623047" text="Tên khách hàng" />
-                        <TableColumn prefWidth="54.39996337890625" text="Ghế" />
-                        <TableColumn prefWidth="197.60003662109375" text="Tuyến " />
-                     </columns>
-                  </TableView>
-<<<<<<< HEAD
-                  <TextField layoutX="48.0" layoutY="13.0" prefHeight="26.0" prefWidth="281.0" />
-                  <Label layoutX="5.0" prefHeight="26.0" prefWidth="43.0" text="Tên KH:" />
-                  <Button layoutX="363.0" layoutY="9.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="86.0" text="Check" />
-                  <ComboBox fx:id="From" editable="true" layoutX="14.0" layoutY="52.0" prefHeight="26.0" prefWidth="135.0" promptText="Tìm nơi đi" stylesheets="@Style.css" />
-                  <ComboBox fx:id="To" editable="true" layoutX="164.0" layoutY="52.0" prefHeight="26.0" prefWidth="135.0" promptText="Tìm nơi đến" />
-=======
-                  <TextField layoutX="59.0" layoutY="18.0" prefHeight="26.0" prefWidth="281.0" />
-                  <Label layoutX="14.0" layoutY="18.0" prefHeight="26.0" prefWidth="43.0" text="Tên KH:" />
-                  <Button layoutX="369.0" layoutY="14.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="86.0" text="Check" />
->>>>>>> ef39591bfd70c9626301ecd8577efb082427e61a
-               </children>
-            </AnchorPane>
+            <ImageView fx:id="img1" fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" top="18.0" />
+               </HBox.margin>
+            </ImageView>
+            <Text boundsType="LOGICAL_VERTICAL_CENTER" strokeType="OUTSIDE" strokeWidth="0.0" text="TRANG CHỦ" textOrigin="CENTER" wrappingWidth="155.15491485595703">
+               <HBox.margin>
+                  <Insets right="100.0" top="15.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="bt" mnemonicParsing="false" onAction="#onBtn1Click" prefHeight="34.0" prefWidth="126.0" text="Trang chủ">
+               <HBox.margin>
+                  <Insets left="10.0" top="8.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fx:id="img2" fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
          </children>
-      </VBox>
+      </HBox>
+      <Button layoutX="269.0" layoutY="244.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="136.0" text="Thêm" />
+      <TextField layoutX="158.0" layoutY="55.0" prefHeight="26.0" prefWidth="222.0" text="Tên Khách Hàng " />
+      <TextField layoutX="158.0" layoutY="94.0" prefHeight="26.0" prefWidth="222.0" text="CMND" />
+      <TextField layoutX="420.0" layoutY="55.0" prefHeight="26.0" prefWidth="197.0" text="Số điện thoại" />
+      <TextField layoutX="420.0" layoutY="94.0" prefHeight="26.0" prefWidth="222.0" text="Điểm Đón" />
+      <Button layoutX="423.0" layoutY="244.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="136.0" text="Button" />
+      <ComboBox fx:id="Place" layoutX="158.0" layoutY="134.0" prefHeight="26.0" prefWidth="222.0" promptText="Tuyến" />
+      <TableView layoutX="158.0" layoutY="292.0" prefHeight="194.0" prefWidth="484.0">
+        <columns>
+          <TableColumn prefWidth="72.79999083280563" text="C1" />
+          <TableColumn minWidth="0.0" prefWidth="77.60003662109375" text="C2" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="Type" layoutX="423.0" layoutY="134.0" prefHeight="26.0" prefWidth="96.0" promptText="Ghế" />
+      <ComboBox fx:id="Time" layoutX="416.0" layoutY="180.0" prefWidth="150.0" />
+      <DatePicker layoutX="158.0" layoutY="180.0" />
    </children>
 </AnchorPane>
