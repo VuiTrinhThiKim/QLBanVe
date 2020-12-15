@@ -5,40 +5,69 @@
  */
 package com.mycompany.qlbanvexe;
 
-import java.net.URL;
-import java.util.ResourceBundle;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.fxml.FXML;
-import javafx.scene.control.ComboBox;
-
 /**
  *
- * @author asus
+ * @author ACER
  */
-public class statisticController extends loginController{
-    @FXML
-    public ComboBox<String> Place; 
-    public ComboBox<String> Time; 
-    public ComboBox<String> Type; 
-    public ComboBox<String> chooseSeat;
-    
-    ObservableList<String> place = FXCollections.observableArrayList ("Gia Lai - TPHCM", "TPHCM - Gia Lai","Hà Nội - TPHCM", "TPHCM - Hà Nội");
-    ObservableList<String> time = FXCollections.observableArrayList("01:10", "02:20", "03:30", "04:40", "05:50",
-            "06:00", "07:15", "08:25", "09:35", "10:45", "11:05", "12:55");
-    
-    ObservableList<String> type = FXCollections.observableArrayList("Thường: Ghế ngồi", "Thường: Giường nằm", "VIP: LIMOUSINE");
-            
-    ObservableList<String> seat = FXCollections.observableArrayList("A01", "A02", "A03", "A04", "A05", "B01", "B02", "B03", "B04", "B05");
-    
-     @Override   
-    public void initialize(URL url, ResourceBundle rb) {
-       
-        Place.setItems(place);
-        Time.setItems(time);
-        Type.setItems(type);
-       
+import java.io.File;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
-}
+import java.io.IOException;
+import java.net.URL;
+import java.sql.SQLException;
+import java.sql.Time;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ResourceBundle;
+import java.util.UUID;
+import java.util.jar.Attributes.Name;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+
+public class StatisticController extends BookingController{
+    @FXML
+    public TableView<Booking> table1;
+   
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        File file1 = new File("src/manage.jpg");
+        Image image1 = new Image(file1.toURI().toString());
+        img1.setImage(image1);
+        
+        File file2 = new File("src/home.png");
+        Image image2 = new Image(file2.toURI().toString());
+        img2.setImage(image2);
+       
+    }
+     
     
+   
+    
+    public void changeSceneBookingDetail(ActionEvent e) throws IOException {
+        Stage stage = (Stage)((Node) e.getSource()).getScene().getWindow();
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("BookingDetail.fxml"));
+        Parent bookingViewParent = loader.load();
+        Scene scene = new Scene(bookingViewParent);
+        BookingDetailController controller = loader.getController();
+        Booking selected = table.getSelectionModel().getSelectedItem();
+        controller.setBooking(selected);
+        stage.setScene(scene);
+    }
 }

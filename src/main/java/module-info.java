@@ -6,8 +6,7 @@ module com.mycompany.qlbanvexe {
     opens com.mycompany.qlbanvexe to javafx.fxml;
     exports com.mycompany.qlbanvexe;
     requires mysql.connector.java;
-
+    
     requires java.sql;
-
- 
+    
 }
